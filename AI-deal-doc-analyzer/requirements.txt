@@ -1,0 +1,11 @@
+Flask==3.1.2
+pdfplumber==0.11.7
+python-dotenv==1.1.1
+openai==1.107.2
+pdfminer.six==20250506
+Pillow==11.3.0
+pypdfium2==4.30.0
+Wand==0.6.13
+charset-normalizer==3.4.3
+requests==2.32.5
+typing_extensions==4.15.0

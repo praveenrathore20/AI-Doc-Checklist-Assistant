@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analysis Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📊 AI Checklist Result</h1>
+
+        <p class="subtitle">
+            Your PDF has been analyzed successfully.
+        </p>
+
+        <div class="result-card">
+
+            <h2>Organized Checklist</h2>
+
+            <div class="ai-output">
+                {{ checklist }}
+            </div>
+
+        </div>
+
+        <br>
+
+        <center>
+            <a href="/">
+                <button>
+                    ⬅ Upload Another PDF
+                </button>
+            </a>
+        </center>
+
+    </div>
+
+</body>
+
+</html>

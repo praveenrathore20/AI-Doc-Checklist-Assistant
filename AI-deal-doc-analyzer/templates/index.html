@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Deal Checklist Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Deal Checklist Assistant</h1>
+
+        <p class="subtitle">
+            Upload your PDF checklist and let AI extract, organize, and structure the important action items.
+        </p>
+
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+
+            <div class="upload-box">
+
+                <h3>📄 Upload PDF Checklist</h3>
+
+                <br>
+
+                <input type="file"
+                       name="pdf"
+                       accept=".pdf,.docx"
+                       required>
+
+                <br><br>
+
+                <small>
+                    Supported formats: PDF, DOCX
+                </small>
+
+            </div>
+
+            <center>
+                <button type="submit">
+                    🚀 Upload & Analyze
+                </button>
+            </center>
+
+        </form>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3>📂 Upload</h3>
+                <p>Upload any checklist PDF</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>🤖 AI Analysis</h3>
+                <p>Extract key checklist items</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>✅ Organized Output</h3>
+                <p>Get a structured checklist</p>
+            </div>
+
+        </div>
+
+        <div class="result-card">
+
+            <h2>How It Works</h2>
+
+            <br>
+
+            <ul class="checklist">
+                <li>Upload your PDF document</li>
+                <li>AI reads and extracts important points</li>
+                <li>Checklist items are reordered logically</li>
+                <li>Results are displayed in a clean format</li>
+            </ul>
+
+        </div>
+
+        <div class="footer">
+            <p>
+                AI Deal Checklist Assistant © 2026
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
